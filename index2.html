@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut-icon" href="">
+    <link rel="stylesheet" href="estilo2.css">
+    <title>Mochila</title>
+</head>
+
+<body>
+
+    <header class="titulo">
+        
+            <img id="icone" class="img-tit" src="imagens/icone-menu-mochila.png" alt="mochila">
+            <script>
+                function mudaiconemenu (foto) {
+                    document.getElementById("icone").src=foto;
+                }
+            </script>
+        
+        <h1><a href="home.html" target="_self">Mochilistas</a></h1>
+        <hr>
+        <h2>Material Escolar e muito mais...!</h2>
+
+        <nav id="menu">
+            <h3>Menu Principal</h3>
+            <ul type="disc">
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-home.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="home.html" target="_self">Home</a></li>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-escola.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="listas.html" target="_self">Lista de Material</a></li>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-loja.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="servicos.html" target="_self">Serviços</a></li>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-transfer.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="transferencias.html" target="_self">Transferências</a></li>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-cadastro.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="cadastro.html" target="_self">Cadastro</a></li>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-contato.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="contato.html" target="_self">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="bem-vindo">
+        <h2>Olá! Seja bem-vinda(o)!</h2>
+        <table class="bem-vindo">
+            <tr class="col_vazia"><td rowspan="7"></td></tr>
+            <tr>
+                <td class="col_vazia" colspan="1"></td>
+                <td colspan="5" class="postit"><h4><a href="listas.html" target="_self">Aqui é muito fácil encontrar a sua lista de material escolar. <br>Você pode fazer uma busca pela sua escola e ver a lista de livros e materiais que você irá utilizar no período letivo.</a></h4></td>
+                <td><a href="listas.html" target="_self"><img class="bv" src="imagens/icone-menu-series.png" alt="lista de material"></a></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td class="col_vazia" colspan="1"></td>
+                <td colspan="5" class="postit"><h4><a href="servicos.html" target="_self">Na aba de Serviços você encontrará soluções de Transporte Escolar, Aulas de Reforço e Entrega de Lanche. Tudo para que a sua vida escolar seja a mais satisfatória possível.</a></h4></td>
+                <td><a href="servicos.html" target="_self"><img class="bv" src="imagens/icone-menu-escola.png" alt="escola"></a></td>
+                </h4></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td class="col_vazia" colspan="1"></td>
+                <td colspan="5" class="postit"><h4><a href="transferencias.html" target="_self">Quer mudar de escola? Sem problemas.<br>Confira as opções de transferência escolar disponíveis.</a></h4></td>
+                <td><img class="bv" src="imagens/icone-menu-loja.png" alt="loja"></td>
+            </tr>
+    </table>
+    </div>
+
+</body>
+</html>

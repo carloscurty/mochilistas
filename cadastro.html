@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut-icon" href="">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Mochilistas</title>
+</head>
+
+
+
+<body>
+    <div id="topo"></div>
+    <header class="menu-top">
+        <div class="fundo-menu">
+            <nav class="menu">
+            <ul>
+                <li><a href="home.html" target="_self">Home</a></li>
+                <li><a href="servicos.html" target="_self">Serviços</a></li>
+                <li><a href="transferencia.html" target="_self">Transferências</a>
+                <li><a href="cadastro.html" target="_self">Cadastro</a></li>
+                <li><a href="contato.html" target="_self">Contato</a></li>
+            </ul>
+            </nav>
+        </div>
+
+    </header>
+    
+        <div class="cabecalho">
+            <h1>Mochilistas</h1>
+            <hr>
+            <h2>Material Escolar e muito mais...!</h2>
+        </div>
+<div id="listas">
+<table>
+    <td>
+        <h1>Formulário de Contato</h1>
+    </td>
+</table>
+
+<form action="cadastro.html" method="post" autocomplete="on">
+<fieldset>
+    <fieldset class="usuario">
+        <legend><strong>Identificação do usuário</strong></legend>
+
+        <table>
+            <td>
+                <label for="nome">Nome:*</label><br>
+                <input type="text" id="fname" name="nome" size="45" required autofocus><br><br>
+                <label for="email">Email:*</label><br>
+                <input type="email" name="email" placeholder="seuemail@provedor.com.br" required size="45"><br>
+            </td>
+            <td>
+                <label for="senha">Senha:* (8 dígitos)</label><br>
+                <input type="password" name="senha" required maxlength="8" autocomplete=""><br><br>
+                <label for="data">Data de Nascimento: </label><br>
+                <input type="date" name="data"><br>
+            </td>
+            <td>
+                <fieldset class="usuario" width="30">
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" value="Feminino">Feminino<br><br>
+                    <input type="radio" name="sexo" value="Masculino">Masculino<br>
+                </fieldset>
+            </td>
+        </table>
+    </fieldset><br>
+
+    <fieldset class="endereco">
+        <legend><strong>Endereço do usuário</strong></legend>
+    
+        <table>
+            <td>
+                <label for="logradouro">Logradouro: </label><br>
+                <input type="text" name="logradouro" size="69"><br>
+                <label for="cidade">Cidade: </label><br>
+                <input type="text" name="cidade" size="69"><br>
+            </td>
+            <td>
+                <label for="numero">Número:</label><br>
+                <input type="number" name="numero" maxlength="6"><br>
+                <label for="estado">Estado:</label><br>
+                <select name="estado" id="viesport"><br>
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Espírito Santo">Espírito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Pará">Pará</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                </select>
+            </td>
+        </table>
+        </fieldset><br>
+    
+        <table>
+            <td>
+            <fieldset class="mensagem">
+                <legend><strong>Mensagem do usuário</strong></legend>
+
+                <textarea name="mensagem" id="" cols="97" placeholder="Escreva aqui a sua mensagem" rows="3" ></textarea>
+            </td>
+        </table>
+
+        <table>
+            <td><p>*Campos Obrigatórios</p></td>
+            <td style="text-align: right";>
+                <input type="submit" name="btn-enviar" width="50">
+            </td>
+        </table>
+    </fieldset>
+
+</fieldset>
+<legend></legend>
+</form>
+</div>  
+<footer>
+                
+    <h2>Todos os direitos reservados - 2020</h2>
+    
+</footer>  
+
+</body>
+</html>

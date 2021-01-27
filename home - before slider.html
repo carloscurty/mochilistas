@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut-icon" href="">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Mochilistas</title>
+</head>
+
+
+
+<body>
+
+    <header class="menu-top">
+        <div class="fundo-menu">
+            <nav class="menu">
+            <ul>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-home.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="home.html" target="_self">Home</a></li>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-escola.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="#listas" target="_self">Lista de Material</a></li>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-loja.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="servicos.html" target="_self">Serviços</a>
+<!--                <ul>
+                        <li onmousemove="mudaiconemenu('imagens/icone-menu-loja.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="transporte.html" target="_self">Transporte Escolar</a></li>
+                        <li onmousemove="mudaiconemenu('imagens/icone-menu-loja.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="transporte.html" target="_self">Delivery de Merenda</a></li>
+                        <li onmousemove="mudaiconemenu('imagens/icone-menu-loja.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="transporte.html" target="_self">Aulas de Reforço</a></li>
+                    </ul></li> -->
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-transfer.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="transferencias.html" target="_self">Transferências</a></li>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-cadastro.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="#cadastro" target="_self">Cadastro</a></li>
+                <li onmousemove="mudaiconemenu('imagens/icone-menu-contato.png')" onmouseout="mudaiconemenu('imagens/icone-menu-mochila.png')"><a href="#contato" target="_self">Contato</a></li>
+            </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <div class="cabecalho">
+<!--        <img id="icone" class="img-tit" src="imagens/icone-menu-mochila.png" alt="mochila">
+        <script>
+            function mudaiconemenu (foto) {
+            document.getElementById("icone").src=foto;
+            }
+        </script>
+-->
+        <h1>Mochilistas</h1>
+        <hr>
+        <h2>Material Escolar e muito mais...!</h2>
+
+    </div>
+    
+    <div class="bem-vindo">
+        <h2>Olá! Seja bem-vinda(o)!</h2>
+    <!--    <table class="bem-vindo">
+            <tr class="col_vazia"><td rowspan="7"></td></tr>
+            <tr>
+                <td class="col_vazia" colspan="1"></td>
+                <td colspan="5" class="postit"><h4><a href="#listas" target="_self">Aqui é muito fácil encontrar a sua lista de material escolar. <br>Você pode fazer uma busca pela sua escola e ver a lista de livros e materiais que você irá utilizar no período letivo.</a></h4></td>
+                <td><a href="#listas" target="_self"><img class="bv" src="imagens/icone-menu-series.png" alt="lista de material"></a></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td class="col_vazia" colspan="1"></td>
+                <td colspan="5" class="postit"><h4><a href="servicos.html" target="_self">Na aba de Serviços você encontrará soluções de Transporte Escolar, Aulas de Reforço e Entrega de Lanche. Tudo para que a sua vida escolar seja a mais satisfatória possível.</a></h4></td>
+                <td><a href="servicos.html" target="_self"><img class="bv" src="imagens/icone-menu-escola.png" alt="escola"></a></td>
+                </h4></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td class="col_vazia" colspan="1"></td>
+                <td colspan="5" class="postit"><h4><a href="transferencias.html" target="_self">Quer mudar de escola? Sem problemas.<br>Confira as opções de transferência escolar disponíveis.</a></h4></td>
+                <td><img class="bv" src="imagens/icone-menu-loja.png" alt="loja"></td>
+            </tr>
+    </table>-->
+
+        <ul class="slider">
+            <li><img src="imagens/escola1.jpg" alt="Escola 1"></li>
+            <li><img src="imagens/escola2.jpg" alt="Escola 2"></li>
+            <li><img src="imagens/escola3.jpg" alt="Escola 3"></li>
+        </ul>
+    </div>
+
+    
+        <div id="listas">
+            <h1 class="lista">Listas de Material Escolar</h1>
+            <p class="lista">Vamos encontrar a sua lista de material. Primeiro localize a escola em que você estuda:</p>
+                <div>
+                    <ul class="lista">
+                        <li onmousemove="mudaiconefoot('imagens/escola1.png')" onmouseout="mudaiconefoot('imagens/icone-menu-escola.png')"><a href="escola1.html" target="_self">Centro Educacional Bom Saber</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola2.png')" onmouseout="mudaiconefoot('imagens/icone-menu-escola.png')"><a href="escola2.html" target="_self">Instituto Dom Barroso</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola3.png')" onmouseout="mudaiconefoot('imagens/icone-menu-escola.png')"><a href="escola3.html" target="_self">Colégio Duas Irmãs</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola4.png')" onmouseout="mudaiconefoot('imagens/icone-menu-escola.png')"><a href="escola4.html" target="_self">Colégio Hipótese</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola5.png')" onmouseout="mudaiconefoot('imagens/icone-menu-escola.png')"><a href="escola5.html" target="_self">Escola Técnica de Saúde</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola6.png')" onmouseout="mudaiconefoot('imagens/icone-menu-escola.png')"><a href="escola6.html" target="_self">Instituto Santo Américo</a></li>
+                    </ul>
+                <br>
+                <img id="icone-lista" class="ico-lista" src="imagens/icone-menu-mochila.png" alt="mochila">
+            <script>
+                function mudaiconefoot (foto) {
+                document.getElementById("icone-lista").src=foto;
+                }
+            </script>
+        </div>
+<br><br>
+        <div>
+            <footer>
+                
+                <h2>Todos os direitos reservados - 2020</h2>
+                
+            </footer>
+
+          
+
+
+        </div>
+
+
+
+
+    
+
+</body>
+</html>

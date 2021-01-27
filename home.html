@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut-icon" href="">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Mochilistas</title>
+</head>
+
+
+
+<body>
+    <div id="topo"></div>
+    <header class="menu-top">
+        <div class="fundo-menu">
+            <nav class="menu">
+            <ul class="cor-menu">
+                <li><a href="home.html" target="_self">Home</a></li>
+                <li><a href="#listas" target="_self">Lista de Material</a></li>
+                <li><a href="servicos.html" target="_self">Serviços</a>
+                <li><a href="transferencias.html" target="_self">Transferências</a></li>
+                <li><a href="cadastro.html" target="_self">Cadastro</a></li>
+                <li><a href="contato.html" target="_self">Contato</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+        <div class="cabecalho">
+            <h1>Mochilistas</h1>
+            <hr>
+            <h2>Material Escolar e muito mais...!</h2>
+
+        </div>
+    
+
+    <div class="slider">
+        <ul class="slider">
+            <li>
+                <input type="radio" id="slide1" name="slide" checked>
+                <label for="slide1"></label>
+                <img src="imagens/escola1.png" alt="Escola 1"></li>
+            <li>
+                <input type="radio" id="slide2" name="slide">
+                <label for="slide2"></label>
+                <img src="imagens/escola2.png" alt="Escola 2"></li>
+            <li>
+                <input type="radio" id="slide3" name="slide">
+                <label for="slide3"></label>
+                <img src="imagens/escola3.png" alt="Escola 3"></li>
+            <li>
+                <input type="radio" id="slide4" name="slide">
+                <label for="slide4"></label>
+                <img src="imagens/escola4.png" alt="Escola 3"></li>
+            <li>
+                <input type="radio" id="slide5" name="slide">
+                <label for="slide5"></label>
+                <img src="imagens/escola5.png" alt="Escola 3"></li>
+            <li>
+                <input type="radio" id="slide6" name="slide">
+                <label for="slide6"></label>
+                <img src="imagens/escola6.png" alt="Escola 3"></li>
+        </ul>
+    </div>
+
+    <div class="separador">
+        <div class="volta-topo">
+            <a href="#topo"><img src="imagens/seta-topo.webp" alt="seta-topo"></a>
+        </div>
+    </div>
+    
+        <div id="listas">
+            <br><br><br>
+            <h1 class="lista">Listas de Material Escolar</h1><br>
+            <p class="lista">Vamos encontrar a sua lista de material. <br><br> Primeiro localize a escola em que você estuda:</p>
+                
+                    <ul class="lista">
+                        <li onmousemove="mudaiconefoot('imagens/escola1.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola1.html" target="_self">Centro Educacional Bom Saber</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola2.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola2.html" target="_self">Instituto Dom Barroso</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola3.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola3.html" target="_self">Colégio Duas Irmãs</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola4.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola4.html" target="_self">Colégio Hipótese</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola5.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola5.html" target="_self">Escola Técnica de Saúde</a></li>
+                        <li onmousemove="mudaiconefoot('imagens/escola6.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola6.html" target="_self">Instituto Santo Américo</a></li>
+                    </ul>
+                <br><br>
+                <img id="icone-lista" class="ico-lista" src="imagens/icone-menu-mochila.png" alt="mochila">
+            <script>
+                function mudaiconefoot (foto) {
+                document.getElementById("icone-lista").src=foto;
+                }
+            </script>
+        </div>
+
+        <div class="separador">
+            <div class="volta-topo">
+                <a href="#topo"><img src="imagens/seta-topo.webp" alt="seta-topo"></a>
+            </div>
+        </div>
+        
+            <footer>
+                
+                <h2>Todos os direitos reservados - 2020</h2>
+                
+            </footer>  
+
+    </body>
+</html>
