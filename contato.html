@@ -30,60 +30,28 @@
             </nav>
         </div>
     </header>
-    
+
     <div id="listas">
         <br><br><br>
-                <h2 class="mapa-site"><a href="cadastro.html" target="_self">Home</a> > CADASTRO</h2><br>
+                <h2 class="mapa-site"><a href="home.html" target="_self">Home</a> > CONTATO</h2><br>
     </div>
 
-    <h1 class="lista">Formulário de Cadastro</h1>
-
-<form action="cadastro.html" method="post" autocomplete="on">
+    <h1 class="lista">Contato</h1>
+ 
+    <form action="cadastro.html" method="post" autocomplete="on">
 
     <fieldset>
-        <legend><strong>Identificação do usuário</strong></legend>
 
         <table class="formulario">
             <td>
                 <label for="nome">Nome:*</label><br>
                 <input type="text" id="fname" name="nome" size="45" required autofocus><br><br>
+            
                 <label for="email">Email:*</label><br>
-                <input type="email" name="email" placeholder="seuemail@provedor" required size="45"><br>
-            </td>
-            <td>
-                <label for="senha">Senha:*</label><br>
-                <input type="password" name="senha" placeholder="Mínimo 4 dígitos" required minlength="4" autocomplete="" size="15"><br><br>
-                <label for="data">Data de Nascimento: </label><br>
-                <input type="date" name="data" size="15"><br>
-            </td>
-            <td class="sexo">
-                <fieldset width="50">
-                    <legend>Sexo</legend>
-                    <input type="radio" name="sexo" value="Feminino">Feminino<br><br>
-                    <input type="radio" name="sexo" value="Masculino">Masculino<br>
-                </fieldset>
-            </td>
-        </table>
-    </fieldset>
-<br>        
-        <fieldset>
-            <legend><strong>Instituição</strong></legend>
-            <table class="formulario">
-                <tr>
-                <td>
-                    <label for="cidade">Escola: </label><br>
-                    <input type="text" name="cidade" size="55">
-                </td>
-                <td><br>
-                    <label for="cidade">Série/Ano: </label><br>
-                    <input type="text" name="serie" size="22"><br><br>
-                </td>
-                </tr>
-                <td>
-                    <label for="cidade">Cidade: </label><br>
-                    <input type="text" name="cidade" size="55"><br>
-                </td>
-                <td>
+                <input type="email" name="email" placeholder="seuemail@provedor" required size="45"><br><br>
+                <label for="cidade">Cidade: </label><br>
+                <input type="text" name="cidade" size="40"><br><br>
+
                 <label for="estado">UF:</label><br>
                 <select name="estado" id="viesport"><br>
                     <option value="Acre">Acre</option>
@@ -114,24 +82,28 @@
                     <option value="Sergipe">Sergipe</option>
                     <option value="Tocantins">Tocantins</option>
                 </select>
-                </td>
-            </tr>
-            <tr>
-                <td style="color: red; font-size: 12px; font-weight: bold;">* campos obrigatórios</td>
-            </tr>
+            
+            <br><br>
+            
+            
+                <textarea name="mensagem" id="" cols="70" placeholder="Escreva aqui a sua mensagem" rows="3" ></textarea>
+            
+
+            <p style="color: red; font-size: 12px; font-weight: bold;">* campos obrigatórios</p>
+            <br>
+            
+            
         </table>
-        </fieldset><br>
-    
-        </fieldset>
-<br>
         <table class="formulario">
             <td class="enviar">
                 <input type="submit" value="  Enviar  " name="btn-envio" class="enviar">
             </td>
         </table>
+ 
     </fieldset>
+    <br><br>
 
-</form>
+    </form>
 </div>  
 <footer>
                 
