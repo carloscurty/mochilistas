@@ -20,12 +20,12 @@
         <div class="fundo-menu">
             <nav class="menu">
                 <ul class="cor-menu">
-                    <li><a href="home.html" target="_self">Home</a></li>
-                    <li><a href="listas.html" target="_self">Listas de Material</a></li>
-                    <li><a href="servicos.html" target="_self">Serviços</a>
-                    <li><a href="transferencias.html" target="_self">Transferências</a></li>
-                    <li><a href="cadastro.html" target="_self">Cadastro</a></li>
-                    <li><a href="contato.html" target="_self">Contato</a></li>
+                    <a href="index.html" target="_self"><li>Home</li></a>
+                    <a href="listas.html" target="_self"><li>Listas de Material</li></a>
+                    <a href="servicos.html" target="_self"><li>Serviços</li></a>
+                    <a href="transferencias.html" target="_self"><li>Transferências</li></a>
+                    <a href="cadastro.html" target="_self"><li>Cadastro</li></a>
+                    <a href="contato.html" target="_self"><li>Contato</li></a>
                 </ul>
             </nav>
         </div>
@@ -33,7 +33,7 @@
     
     <div id="listas">
         <br><br><br>
-                <h2 class="mapa-site"><a href="cadastro.html" target="_self">Home</a> > CADASTRO</h2><br>
+                <h2 class="mapa-site"><a href="index.html" target="_self">Home</a> > CADASTRO</h2>
     </div>
 
     <h1 class="lista">Formulário de Cadastro</h1>
@@ -41,27 +41,27 @@
 <form action="cadastro.html" method="post" autocomplete="on">
 
     <fieldset>
-        <legend><strong>Identificação do usuário</strong></legend>
+        <legend><strong>Identificação do aluno</strong></legend>
 
         <table class="formulario">
             <td>
-                <label for="nome">Nome:*</label><br>
-                <input type="text" id="fname" name="nome" size="45" required autofocus><br><br>
-                <label for="email">Email:*</label><br>
-                <input type="email" name="email" placeholder="seuemail@provedor" required size="45"><br>
-            </td>
-            <td>
-                <label for="senha">Senha:*</label><br>
-                <input type="password" name="senha" placeholder="Mínimo 4 dígitos" required minlength="4" autocomplete="" size="15"><br><br>
-                <label for="data">Data de Nascimento: </label><br>
+                <label for="nome">Nome : </label>
+                <input type="text" id="fname" name="nome" size="50" required autofocus><br>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" required size="50"><br>
+                <label for="data">Data de Nascimento : </label>
                 <input type="date" name="data" size="15"><br>
-            </td>
-            <td class="sexo">
-                <fieldset width="50">
-                    <legend>Sexo</legend>
-                    <input type="radio" name="sexo" value="Feminino">Feminino<br><br>
-                    <input type="radio" name="sexo" value="Masculino">Masculino<br>
-                </fieldset>
+                <label for="senha">Senha: mín. 4 dígitos</label>
+                <input type="password" name="senha" required minlength="4" autocomplete="" size="15"><br>
+            
+                
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo">
+                        <option value="Feminino">Feminino</option>
+                        <option value="Feminino">Masculino</option>
+                        <option value="Feminino">Não informar</option>
+                    </select>
+                
             </td>
         </table>
     </fieldset>
@@ -71,21 +71,40 @@
             <table class="formulario">
                 <tr>
                 <td>
-                    <label for="cidade">Escola: </label><br>
-                    <input type="text" name="cidade" size="55">
-                </td>
-                <td><br>
-                    <label for="cidade">Série/Ano: </label><br>
-                    <input type="text" name="serie" size="22"><br><br>
+                    <label for="escola">Escola : </label>
+                    <select name="escola"><br>
+                        <option value="Centro Educacional Harry Pontes">Centro Educacional Harry Pontes</option>
+                        <option value="Instituto Dom Barroso">Instituto Dom Barroso</option>
+                        <option value="Associação Escolar Machado de Assis">Associação Escolar Machado de Assis</option>
+                        <option value="Escola Técnica de Nutrição">Escola Técnica de Nutrição</option>                        
+                        <option value="Colégio Hipótese">Colégio Hipótese</option>
+                    </select>
+                    
+                    <label for="serie">Série : </label>
+                    <select name="serie">
+                        <option value="Ens. Fund. - 1. ano">Ens. Fund. - 1. ano</option>
+                        <option value="Ens. Fund. - 2. ano">Ens. Fund. - 2. ano</option>
+                        <option value="Ens. Fund. - 3. ano">Ens. Fund. - 3. ano</option>
+                        <option value="Ens. Fund. - 4. ano">Ens. Fund. - 4. ano</option>
+                        <option value="Ens. Fund. - 5. ano">Ens. Fund. - 5. ano</option>
+                        <option value="Ens. Fund. - 6. ano">Ens. Fund. - 6. ano</option>
+                        <option value="Ens. Fund. - 7. ano">Ens. Fund. - 7. ano</option>
+                        <option value="Ens. Fund. - 8. ano">Ens. Fund. - 8. ano</option>
+                        <option value="Ens. Fund. - 9. ano">Ens. Fund. - 9. ano</option>
+                        <option value="Ens. Médio - 1. ano">Ens. Médio - 1. ano</option>
+                        <option value="Ens. Médio - 2. ano">Ens. Médio - 2. ano</option>
+                        <option value="Ens. Médio - 3. ano">Ens. Médio - 3. ano</option>
+                    </select>
+
                 </td>
                 </tr>
                 <td>
-                    <label for="cidade">Cidade: </label><br>
-                    <input type="text" name="cidade" size="55"><br>
-                </td>
-                <td>
-                <label for="estado">UF:</label><br>
-                <select name="estado" id="viesport"><br>
+                    <label for="cidade">Cidade: </label>
+                    <input type="text" name="cidade" size="57"><br>
+                
+                
+                <label for="estado">Estado/UF:</label>
+                <select name="estado"><br>
                     <option value="Acre">Acre</option>
                     <option value="Alagoas">Alagoas</option>
                     <option value="Amapá">Amapá</option>
@@ -116,26 +135,23 @@
                 </select>
                 </td>
             </tr>
-            <tr>
-                <td style="color: red; font-size: 12px; font-weight: bold;">* campos obrigatórios</td>
-            </tr>
         </table>
         </fieldset><br>
     
         </fieldset>
-<br>
-        <table class="formulario">
-            <td class="enviar">
+
+        <table class="enviar">
+            <td>
                 <input type="submit" value="  Enviar  " name="btn-envio" class="enviar">
             </td>
         </table>
     </fieldset>
 
-</form>
+</form><br><br><br>
 </div>  
 <footer>
                 
-    <h2>Todos os direitos reservados - 2020</h2>
+    <h2>Mochilistas - Todos os direitos reservados - 2021</h2>
     
 </footer>  
 

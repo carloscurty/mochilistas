@@ -9,10 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut-icon" href="">
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="gallery.theme.css">
+    <link rel="stylesheet" href="gallery.min.css">
     <title>Mochilistas</title>
 </head>
-
-
 
 <body>
     <div id="topo"></div> <!-- Ancoragem do "volta ao topo" -->
@@ -22,76 +22,153 @@
         <div class="fundo-menu">
             <nav class="menu">
                 <ul class="cor-menu">
-                    <li><a href="home.html" target="_self">Home</a></li>
-                    <li><a href="listas.html" target="_self">Listas de Material</a></li>
-                    <li><a href="servicos.html" target="_self">Serviços</a>
-                    <li><a href="transferencias.html" target="_self">Transferências</a></li>
-                    <li><a href="cadastro.html" target="_self">Cadastro</a></li>
-                    <li><a href="contato.html" target="_self">Contato</a></li>
+                    <a href="index.html" target="_self"><li>Home</li></a>
+                    <a href="listas.html" target="_self"><li>Listas de Material</li></a>
+                    <a href="servicos.html" target="_self"><li>Serviços</li></a>
+                    <a href="transferencias.html" target="_self"><li>Transferências</li></a>
+                    <a href="cadastro.html" target="_self"><li>Cadastro</li></a>
+                    <a href="contato.html" target="_self"><li>Contato</li></a>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div id="listas">
-            <br><br><br>
-            <h2 class="mapa-site"><a href="home.html" target="_self">Home</a> > LISTAS DE MATERIAL ESCOLAR</h2><br>
-            
-            <div class="secao"><img src="imagens/lista-material.png" alt="Lista de material"></div>
-            
+    <div id="secao">
+        <br><br><br>
+        <h2 class="mapa-site"><a href="index.html" target="_self">Home</a> > LISTAS DE MATERIAL ESCOLAR</h2><br>
 
+        <div class="gallery autoplay items-5">
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+            <div id="item-4" class="control-operator"></div>
+            <div id="item-5" class="control-operator"></div>
+                <figure class="item">
+                    <h1><img src="imagens/escola001.png"></h1>
+                </figure>
+                <figure class="item">
+                    <h1><img src="imagens/escola002.png"></h1>
+                </figure>
+                <figure class="item">
+                    <h1><img src="imagens/escola003.png"></h1>
+                </figure>
+                <figure class="item">
+                    <h1><img src="imagens/escola004.png"></h1>
+                </figure>
+                <figure class="item">
+                    <h1><img src="imagens/escola005.png"></h1>
+                </figure>
+            <div class="controls">
+                <a href="#item-1" class="control-button">.</a>
+                <a href="#item-2" class="control-button">.</a>
+                <a href="#item-3" class="control-button">.</a>
+                <a href="#item-4" class="control-button">.</a>
+                <a href="#item-5" class="control-button">.</a>
+                </div>
+            </div>    
+
+            
+            <!--<div class="secao"></div>
+            -->
+
+<!--            <script>
+                var imgEscola = ["imagens/escola001.png", "imagens/escola002.png", "imagens/escola003.png", "imagens/escola004.png", "imagens/escola005.png", "imagens/escola006.png"]
+                var nomEscola = ['Centro Educacional Harry Pontes', 'Instituto Dom Barroso', 'Associação Escolar Machado de Assis','Escola Técnica de Nutrição', 'Colégio Hipótese']
+            </script>
+-->
             <table class="listas">
+                <th><img src="imagens/lista-material.png" alt="Lista de material"></th>
                 <th colspan="2"> Localize a escola em que você estuda e clique na imagem para ver as listas disponíveis:</th>
                 <tr>
-                    <td>
-                        <a href="escola1.html" target="_self"><img src="imagens/escola1.png" alt="Escola 1" /></a>
-                    </td>
-                    <td>
-                        <a href="escola1.html" target="_self">Centro Educacional Bom Saber</a>
-                    </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <a href="escola1.html" target="_self"  style="text-decoration: none;">
+                            <li>
+                                <figure><img src="imagens/escola01.png" alt="Escola 1"><p>Centro Educacional Harry Pontes</p></figure>
+                            </li>
+                        </a>
+                    </ul>        
+                </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <a href="escola2.html" target="_self"  style="text-decoration: none;">
+                            <li>
+                                <figure><img src="imagens/escola02.png" alt="Escola 2"><p>Instituto Dom Barroso</p></figure>
+                            </li>
+                        </a>
+                    </ul>        
+                </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <a href="escola3.html" target="_self"  style="text-decoration: none;">
+                            <li>
+                                <figure><img src="imagens/escola03.png" alt="Escola 3"><p>Assoc. Escolar Machado de Assis</p></figure>
+                            </li>
+                        </a>
+                    </ul>        
+                </td>
                 </tr>
                 <tr>
-                    <td>
-                        <a href="escola2.html" target="_self"><img src="imagens/escola2.png" alt="Escola 2" /></a>
-                    </td>
-                    <td>
-                        <a href="escola2.html" target="_self">Instituto Dom Barroso</a>
-                    </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <a href="escola4.html" target="_self"  style="text-decoration: none;">
+                            <li>
+                                <figure><img src="imagens/escola04.png" alt="Escola 4"><p>Escola Técnica de Nutrição</p></figure>
+                            </li>
+                        </a>
+                    </ul>        
+                </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <a href="escola5.html" target="_self"  style="text-decoration: none;">
+                            <li>
+                                <figure><img src="imagens/escola05.png" alt="Escola 5"><p>Colégio Hipótese</p></figure>
+                            </li>
+                        </a>
+                    </ul>        
+                </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <a href="escola6.html" target="_self"  style="text-decoration: none;">
+                            <li>
+                                <figure><img src="imagens/escola06.png" alt="Escola 6"><p>Colégio Militar</p></figure>
+                            </li>
+                        </a>
+                    </ul>        
+                </td>
                 </tr>
                 <tr>
-                    <td>
-                        <a href="escola3.html" target="_self"><img src="imagens/escola3.png" alt="Escola 3" /></a>
-                    </td>
-                    <td>
-                        <a href="escola3.html" target="_self">Colégio Duas Irmãs</a>
-                    </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <a href="escola7.html" target="_self"  style="text-decoration: none;">
+                            <li>
+                                <figure><img src="imagens/escola07.png" alt="Escola 1"><p>Unidade Escolar Brasil</p></figure>
+                            </li>
+                        </a>
+                    </ul>        
+                </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <a href="escola8.html" target="_self"  style="text-decoration: none;">
+                            <li>
+                                <figure><img src="imagens/escola08.png" alt="Escola 1"><p>Escola Estadual Cecília Meireles</p></figure>
+                            </li>
+                        </a>
+                    </ul>        
+                </td>
+                <td>
+                    <ul style="list-style: none;">
+                        <a href="escola9.html" target="_self"  style="text-decoration: none;">
+                            <li>
+                                <figure><img src="imagens/escola09.png" alt="Escola 1"><p>Colégio José de Alencar</p></figure>
+                            </li>
+                        </a>
+                    </ul>        
+                </td>
                 </tr>
-                <tr>
-                    <td>
-                        <a href="escola4.html" target="_self"><img src="imagens/escola4.png" alt="Escola 4" /></a>
-                    </td>
-                    <td>
-                        <a href="escola4.html" target="_self">Colégio Hipótese</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="escola5.html" target="_self"><img src="imagens/escola5.png" alt="Escola 5" /></a>
-                    </td>
-                    <td>
-                        <a href="escola5.html" target="_self">Escola Técnica de Saúde</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a href="escola6.html" target="_self"><img src="imagens/escola6.png" alt="Escola 6" /></a>
-                    </td>
-                    <td>
-                        <a href="escola6.html" target="_self">Instituto Santo Américo</a>
-                    </td>
-                </tr>
-                <tr class="listas">
-                    <td colspan="2"></td>
+
+                <tr class="secao">
+                    <td colspan="3"></td>
                 </tr>
 
             </table>
@@ -105,9 +182,9 @@
         
             <footer>
                 
-                <h2>Todos os direitos reservados - 2020</h2>
+                <h2>Mochilistas - Todos os direitos reservados - 2021</h2>
                 
             </footer>  
-
-    </body>
+    </div>
+</body>
 </html>

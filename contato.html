@@ -20,12 +20,12 @@
         <div class="fundo-menu">
             <nav class="menu">
                 <ul class="cor-menu">
-                    <li><a href="home.html" target="_self">Home</a></li>
-                    <li><a href="listas.html" target="_self">Listas de Material</a></li>
-                    <li><a href="servicos.html" target="_self">Serviços</a>
-                    <li><a href="transferencias.html" target="_self">Transferências</a></li>
-                    <li><a href="cadastro.html" target="_self">Cadastro</a></li>
-                    <li><a href="contato.html" target="_self">Contato</a></li>
+                    <a href="index.html" target="_self"><li>Home</li></a>
+                    <a href="listas.html" target="_self"><li>Listas de Material</li></a>
+                    <a href="servicos.html" target="_self"><li>Serviços</li></a>
+                    <a href="transferencias.html" target="_self"><li>Transferências</li></a>
+                    <a href="cadastro.html" target="_self"><li>Cadastro</li></a>
+                    <a href="contato.html" target="_self"><li>Contato</li></a>
                 </ul>
             </nav>
         </div>
@@ -33,7 +33,7 @@
 
     <div id="listas">
         <br><br><br>
-                <h2 class="mapa-site"><a href="home.html" target="_self">Home</a> > CONTATO</h2><br>
+                <h2 class="mapa-site"><a href="index.html" target="_self">Home</a> > CONTATO</h2><br>
     </div>
 
     <h1 class="lista">Contato</h1>
@@ -44,15 +44,14 @@
 
         <table class="formulario">
             <td>
-                <label for="nome">Nome:*</label><br>
-                <input type="text" id="fname" name="nome" size="45" required autofocus><br><br>
-            
-                <label for="email">Email:*</label><br>
-                <input type="email" name="email" placeholder="seuemail@provedor" required size="45"><br><br>
-                <label for="cidade">Cidade: </label><br>
-                <input type="text" name="cidade" size="40"><br><br>
+                <label for="nome">Nome : </label>
+                <input type="text" id="fname" name="nome" size="50" required autofocus><br>
+                <label for="email">E-mail: </label>
+                <input type="email" name="email" required size="50"><br>
+                <label for="cidade">Cidade: </label>
+                <input type="text" name="cidade" size="50"><br>
 
-                <label for="estado">UF:</label><br>
+                <label for="estado">Estado:</label>
                 <select name="estado" id="viesport"><br>
                     <option value="Acre">Acre</option>
                     <option value="Alagoas">Alagoas</option>
@@ -86,16 +85,14 @@
             <br><br>
             
             
-                <textarea name="mensagem" id="" cols="70" placeholder="Escreva aqui a sua mensagem" rows="3" ></textarea>
+                <textarea name="mensagem" id="" cols="48" placeholder="Escreva aqui a sua mensagem" rows="3" ></textarea>
             
-
-            <p style="color: red; font-size: 12px; font-weight: bold;">* campos obrigatórios</p>
             <br>
             
             
         </table>
-        <table class="formulario">
-            <td class="enviar">
+        <table class="enviar">
+            <td>
                 <input type="submit" value="  Enviar  " name="btn-envio" class="enviar">
             </td>
         </table>
@@ -107,7 +104,7 @@
 </div>  
 <footer>
                 
-    <h2>Todos os direitos reservados - 2020</h2>
+    <h2>Mochilistas - Todos os direitos reservados - 2021</h2>
     
 </footer>  
 

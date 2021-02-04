@@ -12,7 +12,6 @@
     <title>Mochilistas</title>
 </head>
 
-
 <body>
     <div id="topo"></div> <!-- Ancoragem do "volta ao topo" -->
     <img class="logo" src="imagens/logo-mochilistas-bco-lar.png" alt="logo mochilistas">
@@ -21,46 +20,28 @@
         <div class="fundo-menu">
             <nav class="menu">
                 <ul class="cor-menu">
-                    <li><a href="home.html" target="_self">Home</a></li>
-                    <li><a href="listas.html" target="_self">Listas de Material</a></li>
-                    <li><a href="servicos.html" target="_self">Serviços</a>
-                    <li><a href="transferencias.html" target="_self">Transferências</a></li>
-                    <li><a href="cadastro.html" target="_self">Cadastro</a></li>
-                    <li><a href="contato.html" target="_self">Contato</a></li>
+                    <a href="index.html" target="_self"><li>Home</li></a>
+                    <a href="listas.html" target="_self"><li>Listas de Material</li></a>
+                    <a href="servicos.html" target="_self"><li>Serviços</li></a>
+                    <a href="transferencias.html" target="_self"><li>Transferências</li></a>
+                    <a href="cadastro.html" target="_self"><li>Cadastro</li></a>
+                    <a href="contato.html" target="_self"><li>Contato</li></a>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div id="listas">
         <br><br><br>
-                <h2 class="mapa-site"><a href="home.html" target="_self">Home</a> > SERVIÇOS</h2><br>
-    </div>
+                <h2 class="mapa-site"><a href="index.html" target="_self">Home</a> > Serviços > <a href="#transporte">TRANSPORTE</a> | <a href="#reforco">REFORÇO</a> | <a href="#merenda">MERENDA</a></h2><br>
 
-    <div id="transporte">
-        <div id="listas">
-        <br><br><br>
-            <h1 class="lista">Transporte Escolar</h1><br>
+    
+    <div id="secao">
+        <div id="transporte"></div>
+            <br><br><br>  
+            <h1 class="tit-texto">Transporte Escolar</h1><br>
             <img id="servico" src="imagens/transporte-escolar.png" alt="transporte escolar">
-            <p class="lista">Texto sobre Transporte Escolar <br><br> Parágrafo sobre Transporte Escolar</p>
+            <p class="tit-texto">Texto sobre Transporte Escolar <br><br> Parágrafo sobre Transporte Escolar</p>
                 
-<!--                    <ul class="lista">
-                        <li onmousemove="mudaiconefoot('imagens/escola1.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola1.html" target="_self">Centro Educacional Bom Saber</a></li>
-                        <li onmousemove="mudaiconefoot('imagens/escola2.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola2.html" target="_self">Instituto Dom Barroso</a></li>
-                        <li onmousemove="mudaiconefoot('imagens/escola3.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola3.html" target="_self">Colégio Duas Irmãs</a></li>
-                        <li onmousemove="mudaiconefoot('imagens/escola4.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola4.html" target="_self">Colégio Hipótese</a></li>
-                        <li onmousemove="mudaiconefoot('imagens/escola5.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola5.html" target="_self">Escola Técnica de Saúde</a></li>
-                        <li onmousemove="mudaiconefoot('imagens/escola6.png')" onmouseout="mudaiconefoot('imagens/icone-menu-mochila.png')"><a href="escola6.html" target="_self">Instituto Santo Américo</a></li>
-                    </ul>
-                <br><br>
-                <img id="icone-lista" class="ico-lista" src="imagens/icone-menu-mochila.png" alt="mochila">
-            <script>
-                function mudaiconefoot (foto) {
-                document.getElementById("icone-lista").src=foto;
-                }
-            </script>
--->
-        </div>
     </div>
 
     <div class="separador">
@@ -69,13 +50,14 @@
         </div>
     </div>
 
-    <div id="reforco">
-        <div id="listas">
-            <br><br><br>
-                <h1 class="lista">Aulas de Reforço Escolar</h1><br>
+    
+    <div id="secao">
+        <div id="reforco"></div>
+        <br><br><br>  
+                <h1 class="tit-texto">Aulas de Reforço Escolar</h1><br>
                 <img id="servico" src="imagens/reforço-escolar.png" alt="reforco escolar">
-                <p class="lista">Texto sobre Reforço Escolar <br><br> Parágrafo sobre Reforço Escolar</p>
-        </div>
+                <p class="tit-texto">Texto sobre Reforço Escolar <br>
+                <p></p><br> Parágrafo sobre Reforço Escolar</p>
     </div>
 
     <div class="separador">
@@ -84,12 +66,14 @@
         </div>
     </div>
 
-    <div id="merenda">
-        <div id="listas">
-            <br><br><br>
-                <h1 class="lista">Entrega de Merenda na escola</h1><br>
+    
+        
+    <div id="secao">
+        <div id="merenda"></div>
+        <br><br><br>  
+                <h1 class="tit-texto">Entrega de Merenda na escola</h1><br>
                 <img id="servico" src="imagens/merenda-escolar.png" alt="merenda escolar">
-                <p class="lista">Texto sobre entrega de lanche na escola <br><br> Parágrafo sobre Delivery de Merenda</p>
+                <p class="tit-texto">Texto sobre entrega de lanche na escola <br><br> Parágrafo sobre Delivery de Merenda</p>
         </div>
     </div>
 
@@ -102,7 +86,7 @@
         
             <footer>
                 
-                <h2>Todos os direitos reservados - 2020</h2>
+                <h2>Mochilistas - Todos os direitos reservados - 2021</h2>
                 
             </footer>
 
