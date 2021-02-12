@@ -15,25 +15,35 @@
 </head>
 
 <body>
-    <div id="topo"></div> <!-- Ancoragem do "volta ao topo" -->
-    <img class="logo" src="imagens/logo-mochilistas-bco-lar.png" alt="logo mochilistas">
-    
-    <header class="menu-top">    
-        <div class="fundo-menu">
-            <nav class="menu">
-                <ul class="cor-menu">
-                    <a href="index.html" target="_self"><li>Home</li></a>
-                    <a href="listas.html" target="_self"><li>Listas de Material</li></a>
-                    <a href="servicos.html" target="_self"><li>Serviços</li></a>
-                    <a href="transferencias.html" target="_self"><li>Transferências</li></a>
-                    <a href="cadastro.html" target="_self"><li>Cadastro</li></a>
-                    <a href="contato.html" target="_self"><li>Contato</li></a>
+
+<input type="checkbox" id="check">
+<label for="check" id="icone"><img src="imagens/icone.png"></label>
+
+<div class="barra">
+
+    <nav class="menul">
+        <ul>
+            <li><a href="index.html"><div class="link">Home</div></a></li>
+            <li><a href="listas.html"><div class="link">Listas de Material</div></a></li>
+            <li><div class="slink">Serviços</div>
+                <ul>
+                    <li><a href="transf.html"><div class="sublink">Transferências</div></a></li>
+                    <li><a href="transp.html"><div class="sublink">Transporte Escolar</div></a></li>
+                    <li><a href="reforco.html"><div class="sublink">Aulas de Reforço</div></a></li>
+                    <li><a href="merenda.html"><div class="sublink">Delivery de Merenda</div></a></li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <br><br><br>
-    <h2 class="mapa-site"><a href="index.html" target="_self">HOME</a> > </h2><br>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+    <div id="topo"></div> <!-- Ancoragem do "volta ao topo" -->
+    <div class="fundo-menu">
+        <img class="logo" src="imagens/logo-mochilistas-bco-lar.png" alt="logo mochilistas">
+    </div>
+    <div>
+        <h2 class="local"><a href="index.html" target="_self">Home</a> > </h2>
+    </div>
 
     <section>
 
@@ -78,8 +88,15 @@
     </section>
 
     <footer>
-                
-        <h2>Mochilistas - Todos os direitos reservados - 2021</h2>
+        <nav class="menu1">
+            <ul>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><h2>Mochilistas - Todos os direitos reservados - 2021</h2></li>
+                <li><a href="contato.html"><div class="link">Contato</div></a></li>
+            </ul>
+        </nav>
+        <h1></h1>        
+        
                 
     </footer>  
 
