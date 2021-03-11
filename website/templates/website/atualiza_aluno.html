@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Página de Atualização de Aluno</h1>
+
+    <ul>
+        <li><a href="{% url 'website:index' %}">Página Inicial</a></li>
+        <li><a href="{% url 'website:cadastra_Aluno' %}">Cadastrar Aluno</a></li>
+        <li><a href="{% url 'website:lista_Aluno' %}">Lista de Alunos</a></li>
+    </ul>
+
+    <form method="post">
+        <!-- É necessário colocar o código abaixo em toda página que                   -->
+        <!-- contenha um formulário para evitar o ataque de Cross Site Request Forgery -->
+        {% csrf_token %}
+
+        {{ form }}
+
+        <button>Enviar</button>
+    </form>
+</body>
+</html>

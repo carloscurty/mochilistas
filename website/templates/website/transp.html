@@ -1,0 +1,52 @@
+{% extends "website/layouts/base.html" %}
+
+<div id="topo"></div>
+
+{% block title %} Transporte Escolar {% endblock %}
+
+{% block conteudo %}
+
+{% load static%}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <img src="{% static 'website/img/transp-escolar.jpg' %}" class="img-fluid" alt="Aluno entrando em ônibus escolar">
+                <div class="card-body">
+                    <br><br><br>
+                    <h3>Transporte Escolar</h3>
+                    <p class="tit-texto">Para garantir segurança e qualidade ao transporte dos estudantes, o <a href="http://portal.mec.gov.br/transporte-escolar" target="_blank">Ministério da Educação</a> por meio do <strong>Fundo Nacional de Desenvolvimento da Educação</strong> <code>(FNDE)</code> mantém dois programas de apoio ao transporte escolar para alunos da educação básica que residem na zona rural.</p>
+                    <br>
+
+                    <div class="card">
+                        <div class="card-header">
+                          Programas de apoio ao Transporte Escolar
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Caminho da Escola</h5>
+                          <p class="card-text">É uma linha crédito concedida pelo Banco Nacional de Desenvolvimento Econômico e Social (BNDES) para a aquisição, pelos estados e municípios, de ônibus, miniônibus e micro-ônibus zero quilômetro e de embarcações novas.</p>
+                          <a href="http://www.fnde.gov.br/index.php/programas-caminho-da-escola" target="_blank" class="btn btn-secondary">Saiba mais</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">PNATE</h5>
+                            <p class="card-text">Transferência automática de recursos aos estados, Distrito Federal e municípios para custear despesas com reforma, seguro, licenciamento, impostos, manutenção e pagamento de serviços contratados com terceiros.</p>
+                            <a href="http://www.fnde.gov.br/index.php/programas-transporte-escolar" target="_blank" class="btn btn-secondary" style="text-align: right;">Saiba mais</a>
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="card-body" style="text-align:center;">
+                    <h5 class="card-title"><img src="{% static 'website/img/transporte-escolar.png' %}" height="100em" alt="moto delivery"><br></h5>
+                    <p class="card-text">Quer saber mais sobre os nossos parceiros em transporte Escolar? </p> 
+                    <a href="{% url 'website:contato' %}" class="btn btn-success">Solicite Transporte Escolar</a>        
+                    <br>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{% endblock %}

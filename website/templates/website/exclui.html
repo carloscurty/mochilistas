@@ -1,0 +1,26 @@
+{% extends "website/layouts/base.html" %}
+
+{% load widget_tweaks %}
+
+{% block title %} Exclusão de Escola {% endblock %}
+
+{% block conteudo %}
+
+    <form method="post" style="border: 1px solid #AAA; margin: 64px auto; padding: 32px; width: 50%;">
+        <!-- É necessário colocar o código abaixo em toda página que                   -->
+        <!-- contenha um formulário para evitar o ataque de Cross Site Request Forgery -->
+        {% csrf_token %}
+
+        Você tem certeza que quer excluir a Escola <b>{{ Escola.nome }}</b>? <br><br>
+
+        <button type="button">
+            <a href="{% url 'website:lista_Escolas' %}">Cancelar</a>
+        </button>
+        <button>Excluir</button>
+    </form>
+{% endblock %}
+
+<!--
+</body>
+</html>
+-->

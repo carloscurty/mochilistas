@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    {%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'website/img/mochicon.png' %}">
+    <title>{% block title %}Gerenciador de Escolas {% endblock%}</title>
+
+{% block styles %}
+
+<link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css'%}">
+<link rel="stylesheet" href="{% static 'website/css/bootstrap-grid.css'%}">
+<link rel="stylesheet" href="{% static 'website/css/estilo.css'%}">
+
+<link rel="stylesheet" href="{% static 'website/css/gallery.min.css'%}">
+<link rel="stylesheet" href="{% static 'website/css/gallery.theme.css'%}">
+
+{% endblock %}
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark">
+<!--    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'website:index' %}">
+              <img class="logo" src="{% static 'website/img/logo-mochilistas-bco-lar.png'%}" alt="logo mochilistas">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'website:index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'website:cadastra_Aluno' %}">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'website:lista_Escolas' %}">Listas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'website:transf' %}">Transferências</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'website:transp' %}">Transporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'website:reforco' %}">Reforço</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'website:merenda' %}">Merenda</a>
+              </li>
+              <li class="nav-link">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  8 de Março
+                </button>
+              </li>
+
+<!--              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Serviços
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Transporte</a></li>
+                  <li><a class="dropdown-item" href="#">Aulas de Reforço</a></li>
+                  <li><a class="dropdown-item" href="#">Delivery de Merenda</a></li>
+                  -->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+{% block conteudo%}{% endblock%}
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Feliz Dia Internacional da Mulher!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+          <img src="{% static 'website/img/dia-mulher.png' %}" width="100%">
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+{% block foot %}
+<div class="card text-center bg-gradient bg-dark">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img src="{% static 'website/img/seta-topo.png'%}" height="40em" alt="seta-topo"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="true" href="{% url 'website:index' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website:cadastra_Aluno' %}">Cadastro</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="true" href="{% url 'website:lista_Escolas' %}">Listas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website:transf' %}">Transferências</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website:transp' %}">Transporte</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website:reforco' %}">Reforço</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website:merenda' %}">Merenda</a>
+      </li>
+  </ul>
+  </div>
+  
+</div>
+
+<footer id="footer">
+  <div class="card-body" style="background-color: transparent; color: #fff;">
+    <h5 class="card-title"><img src="{% static 'website/img/atendimento.png'%}" height="35em"> Fale Conosco</h5>
+    <p class="card-text">Entre em contato e solicite mais informações sobre os nossos serviços</p>
+    <a href="{% url 'website:contato' %}" class="btn btn-light">Contato</a>
+  </div>
+
+  <div class="rodape">
+      <br>
+
+      <table class="rodape">
+          <tr>
+              <td class="col1"></td>
+              <td colspan="7"><img src="{% static 'website/img/logo-mochilistas-bco-lar.png'%}" class="rodape"></td>
+          </tr>
+          <tr>
+              <td class="col1"></td>
+              <td colspan="7"><h3>Curso Programador Web/SENAC 2021<br>[Equipe 2]<br>Todos os direitos reservados<br></h3></td>
+          </tr>
+          <tr>
+        </tr>
+          <tr>
+              <td class="col1"></td>
+<!--              <td colspan="7"><br><hr><br><h3><a href="contato.html" target="_blank"><img src="{% static 'website/img/atendimento.png'%}"> Fale conosco </a></h3><br></td>-->
+          </tr>
+          <tr>
+              <td class="col1"></td>
+              <td><a href="mailto:" target="_blank"><img src="{% static 'website/img/email.png'%}"></a></td>
+              <td><a href="https://fb.com" target="_blank"><img src="{% static 'website/img/facebook.png'%}"></a></td>
+              <td><a href="https://linkedin.com" target="_blank"><img src="{% static 'website/img/Instagram.PNG'%}"></a></td>
+              <td><a href="https://instagram.com" target="_blank"><img src="{% static 'website/img/twitter.png'%}"></a></td>
+              <td><a href="https://instagram.com" target="_blank"><img src="{% static 'website/img/youtube.png'%}"></a></td>
+              <td><a href="https://wa.me/" target="_blank"><img src="{% static 'website/img/WhatsApp.png'%}"></a></td>
+              <td><a href="https://wa.me/" target="_blank"><img src="{% static 'website/img/telegram.png'%}"></a></td>
+          </tr>
+          <tr><td class="col1"></td>
+              <td colspan="7"></td>
+          </tr>
+      </table>
+      <br>
+  </div>        
+</footer>
+{% endblock %}
+</body>
+</html>

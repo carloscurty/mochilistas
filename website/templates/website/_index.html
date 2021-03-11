@@ -1,0 +1,31 @@
+{% extends "website/layouts/base.html" %}
+
+{% block title %} Página Inicial {% endblock %}
+
+{% block conteudo %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Cadastrar Escola</h5>
+                    <p class="card-text">Cadastrar aqui uma nova <code>ESCOLA</code></p>
+                    <a href="{% url 'website:cadastra_Escola'%}" class="btn btn-primary">Nova ESCOLA</a>
+                </div>
+            </div>
+        </div>
+    
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Lista de Escolas</h5>
+            <p class="card-text">Veja aqui a lista de <code>ESCOLAS</code> cadastradas.</p>
+            <a href="{% url 'website:lista_Escolas' %}" class="btn btn-primary">Vá para Lista</a>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+{% endblock %}

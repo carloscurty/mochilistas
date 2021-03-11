@@ -1,0 +1,38 @@
+{% extends "website/layouts/base.html" %}
+
+<div id="topo"></div>
+
+{% block title %} Reforço Escolar {% endblock %}
+
+{% block conteudo %}
+
+{% load static%} 
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <img src="{% static 'website/img/aula-particular.jpg' %}" class="img-fluid" alt="escrevendo no caderno">
+                <div class="card-body">
+                    <h3>Reforço Escolar</h3>
+                    <br>
+                    <h5>Aula particular ou Aulas de Reforço? </h5>
+                    <br>
+                    <p class="tit-texto">Normalmente, a aula particular se destina a atender uma demanda pontual e específica do aluno em uma determinada disciplina. <br>Trata-se de quando o estudante não compreendeu parte da matéria explicada em sala de aula.
+                    <p class="card-text">Já o reforço escolar envolve um apoio mais global à compreensão dos conteúdos. <br>Em geral, é necessário quando o aluno apresenta dificuldades maiores, como uma defasagem ou deficiência de base.</p>
+                    <p class="card-text">Possuímos parceria com diversos profissionais da educação, totalmente capacitados para dar aquele reforço nos estudos.</p>      
+                </div>
+                <hr>
+                <div class="card-body" style="text-align:center;">
+                    <h5 class="card-title"><img src="{% static 'website/img/reforco-escolar.png' %}" height="100em"><br></h5>
+                    <p class="card-text">Entre em contato conosco e saiba mais sobre os nossos parceiros</p> 
+                    <a href="{% url 'website:contato' %}" class="btn btn-success">Reforço Escolar</a>        
+                    <br>
+                </div>
+  
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{% endblock %}

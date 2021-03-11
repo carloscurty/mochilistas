@@ -1,0 +1,98 @@
+{% extends "website/layouts/base.html" %}
+
+<div id="topo"></div>
+
+{% load widget_tweaks %}
+
+{% block title %} Cadastro de Escolas {% endblock %}
+
+{% block conteudo %}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Cadastro de Escolas</h5>
+                    <p class="card-text">Complete o formulário abaixo para cadastrar uma nova <code>Escola</code>.</p>
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        <!--Nome da Escola-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Nome da Escola</span>
+                            </div>
+                            {% render_field form.nome_escola class+="form-control" placeholder="Digite aqui o nome da Escola" %}
+                        </div>
+
+                        <!--Cidade-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Cidade</span>
+                            </div>
+                            {% render_field form.cidade_escola class+="form-control" placeholder="Digite aqui a cidade da Escola" %}
+                        </div>
+
+                        <!--UF-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">UF</span>
+                            </div>
+                            {% render_field form.uf_escola class+="form-control" placeholder="Digite aqui o estado/UF da escola" %}
+                        </div>
+
+                        <!--Ensino Infantil-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Ensino Infantil</span>
+                            </div>
+                            {% render_field form.ensino_infantil class+="form-control" placeholder="Possui Ensino Infantil? <S/N>" %}
+                        </div>
+                          
+                        <!--Ensino Fundamental-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Ensino Fundamental</span>
+                            </div>
+                            {% render_field form.ensino_fundamental class+="form-control" placeholder="Possui Ensino Fudamental? <S/N>" %}
+                        </div>
+
+                        <!--Ensino Médio-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Ensino Médio</span>
+                            </div>
+                            {% render_field form.ensino_medio class+="form-control" placeholder="Possui Ensino Médio? <S/N>" %}
+                        </div>
+                      
+                        <!--Vagas Ensino Infantil-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Vagas Ensino Infantil</span>
+                            </div>
+                            {% render_field form.vagas_infantil class+="form-control" placeholder="Quantidade de vagas no Ensino Infantil?" %}
+                        </div>
+                        <!--Vagas Ensino Fundamental-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Vagas Ensino Fundamental</span>
+                            </div>
+                            {% render_field form.vagas_fundamental class+="form-control" placeholder="Quantidade de vagas no Ensino Fundamental?" %}
+                        </div>
+                        <!--Vagas Ensino Médio-->
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Ensino Médio</span>
+                            </div>
+                            {% render_field form.vagas_medio class+="form-control" placeholder="Quantidade de vagas no Ensino Médio?" %}
+                        </div>
+
+                        <button class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

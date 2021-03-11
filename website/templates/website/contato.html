@@ -1,0 +1,60 @@
+<div id="topo"></div>
+
+{% extends "website/layouts/base.html" %}
+
+{% block title %} Contato {% endblock %}
+
+{% block conteudo %}
+
+{% load static%}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fale Conosco</h5>
+                    <p class="card-text">Utilize o formulário abaixo para nos enviar uma <code>MENSAGEM</code>.</p>    
+                    <form method="post">
+                        {% csrf_token %}
+
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Nome" aria-label="Primeiro nome">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Sobrenome">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Cidade" aria-label="Cidade">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Estado/UF" aria-label="Estado/UF">
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="E-mail" aria-label="e-mail">
+                            </div>
+                            <br><br>
+                            <div class="row">
+                                <div class="col">      
+                                    <textarea class="form-control" name="mensagem" id="" cols="48" placeholder="Escreva aqui a sua mensagem" rows="3" ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                        <button class="btn btn-secondary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{% endblock %}

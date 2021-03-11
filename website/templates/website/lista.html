@@ -1,0 +1,103 @@
+{% extends "website/layouts/base.html" %}
+
+<div id="topo"></div>
+
+{% block title %} Lista de Escolas {% endblock %}
+
+{% block conteudo %}
+
+{% load static%}
+
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Listas de Material Escolar</h5>
+
+                    {% if Escolas %}
+
+                    <p class="card-text">Procure a sua <code>ESCOLA</code> na tabela abaixo e acesse a lista de material clicando na sua série.</p>
+                    <table class="table table-dark table-striped">
+                        <thead class="th1">
+                            <tr>
+                                <th class="th0"></th>
+                                <th class="th0"></th>
+                                <th class="th0"></th>
+                                <th colspan="3" class="th2">Ensino</th>
+                            </tr>
+                            <tr>
+                                
+                                <th>Nome da Escola</th>
+                                <th>Cidade</th>
+                                <th>UF</th>
+                                <th class="th2">INFANTIL</th>
+                                <th class="th2">FUNDAMENTAL</th>
+                                <th class="th2">MÉDIO</th>
+                                        
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for f in Escolas %}
+                                                
+                            <tr>
+                                        
+                                <td id="tabela">
+                                    <a href="{% url 'website:transfe' %}" target="_blank">{{ f.nome_escola }}</a></td>
+                                <td id="tabela">{{ f.cidade_escola }}</td>
+                                <td id="tabela">{{ f.uf_escola }}</td>
+                                <td id="tabela" class="infantil">
+                                    {% if f.ensino_infantil == "S" %}
+                                        <a href="#" class="btn btn-outline-warning">I1</a>
+                                        <a href="#" class="btn btn-outline-warning">I2</a>
+                                        <a href="#" class="btn btn-outline-warning">I3</a>
+                                    {% endif %}
+
+                                </td>
+                                <td id="tabela" class="fundamental">
+
+                                    {% if f.ensino_fundamental == "S" %}
+                                        <a href="#" class="btn btn-outline-info">F1</a>
+                                        <a href="#" class="btn btn-outline-info">F2</a>
+                                        <a href="#" class="btn btn-outline-info">F3</a>
+                                        <a href="#" class="btn btn-outline-info">F4</a>
+                                        <a href="#" class="btn btn-outline-info">F5</a><br>
+                                        <a href="#" class="btn btn-outline-primary">F6</a>
+                                        <a href="#" class="btn btn-outline-primary">F7</a>
+                                        <a href="#" class="btn btn-outline-primary">F8</a>
+                                        <a href="#" class="btn btn-outline-primary">F9</a>
+
+                                    {% endif %}
+                                </td>
+
+                                <td id="tabela">
+                                    {% if f.ensino_medio == "S" %}
+                                    <a href="#" class="btn btn-outline-danger">M1</a>
+                                    <a href="#" class="btn btn-outline-danger">M2</a>
+                                    <a href="#" class="btn btn-outline-danger">M3</a>
+                                {% endif %}
+                                </td>
+
+                                
+                            </tr>
+                         {% endfor %}
+                        </tbody>
+                    </table>
+                    {% else %}
+                    <div class="text-center mt-5 mb-5 jumbotron">
+                        <h5>Nenhuma <code>Escola</code> cadastrada ainda.</h5>
+                    </div>
+                    {% endif %}
+<!--                    <hr/>
+                    <div class="text-right">
+                        <a class="btn btn-primary" href="{% url 'website:cadastra_Escola' %}"> Cadastrar Escola</a>
+                    </div>
+-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{% endblock %}

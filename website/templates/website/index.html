@@ -1,0 +1,81 @@
+{% extends "website/layouts/base.html" %}
+
+<div id="topo"></div>
+
+{% block title %} Mochilistas {% endblock %}
+
+{% block conteudo %}
+
+{% load static%}
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="card" style="background-color: cadetblue; border: 1px solid cadetblue;">
+                <div class="card-body">
+                    <div class="gallery autoplay items-4">
+                        <div id="item-1" class="control-operator"></div>
+                        <div id="item-2" class="control-operator"></div>
+                        <div id="item-3" class="control-operator"></div>
+                        <div id="item-4" class="control-operator"></div>
+                            <figure class="item">
+                            <h1><img src="{% static 'website/img/banner-01.png'%}"></h1></figure>
+                            <figure class="item">
+                            <h1><img src="{% static 'website/img/banner-02.png'%}"></h1></figure>
+                            <figure class="item">
+                            <h1><img src="{% static 'website/img/banner-03.png'%}"></h1></figure>
+                            <figure class="item">
+                            <h1><img src="{% static 'website/img/banner-04.png'%}"></h1></figure>
+                        <div class="controls">
+                            <a href="#item-1" class="control-button">.</a>
+                            <a href="#item-2" class="control-button">.</a>
+                            <a href="#item-3" class="control-button">.</a>
+                            <a href="#item-4" class="control-button">.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card bg-dark bg-gradient">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;">Merenda Escolar</h5><hr>
+                    <img src="{% static 'website/img/lanche-escolar.png' %}" class="col-md-4 float-md-end mb-3 ms-md-3" alt="lanche escolar">
+                    <p class="card-text" style="color: white;">A Hora do recreio é sempre um momento delicioso e muito apreciado por alunos de qualquer idade. <br>Mas além de gostoso o lanche também deve ser saudável.</p>
+                    <a href="{% url 'website:merenda' %}" class="btn btn-success">Leia mais...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card bg-dark bg-gradient">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;">Transporte Escolar</h5><hr>    
+                    <img src="{% static 'website/img/transporte-escolar.png' %}" class="col-md-4 float-md-end mb-1 ms-md-1" alt="ônibus escolar">
+                    <p class="card-text" style="color: white;">Na hora de ir ou voltar da escola, é muito importante que o <strong>transporte</strong> seja feito por profissional qualificado e experiente. <br> Porque com segurança não se brinca!</p><br>
+                    <a href="{% url 'website:reforco' %}" class="btn btn-success">Conheça</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card bg-dark bg-gradient">
+                <div class="card-body">
+                    <h5 class="card-title" style="color: white;">Aula particular ou Reforço?</h5><hr>    
+                    <img src="{% static 'website/img/reforco-escolar.png' %}" class="col-md-3 float-md-end mb-1 ms-md-1" alt="reforco escolar">
+                    <p class="card-text" style="color: white;">Normalmente, a <strong>aula particular</strong> se destina a atender uma demanda pontual e específica do aluno em uma determinada disciplina. Trata-se de quando o estudante não compreendeu parte da matéria explicada em sala de aula.</p><br>
+                    <a href="{% url 'website:reforco' %}" class="btn btn-success">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+    
+{% endblock %}
