@@ -11,34 +11,45 @@
     <link rel="stylesheet" href="estilo.css">
     <title>Mochilistas</title>
 </head>
+<script>
+    function trocaicone (icon) {
+        document.getElementById("icone").src=icon;
+    }
+</script>
 
 <body>
-    <div id="topo"></div> <!-- Ancoragem do "volta ao topo" -->
-    <img class="logo" src="imagens/logo-mochilistas-bco-lar.png" alt="logo mochilistas">
-    
-    <header class="menu-top">    
-        <div class="fundo-menu">
-            <nav class="menu">
-                <ul class="cor-menu">
-                    <a href="index.html" target="_self"><li>Home</li></a>
-                    <a href="listas.html" target="_self"><li>Listas de Material</li></a>
-                    <a href="servicos.html" target="_self"><li>Serviços</li></a>
-                    <a href="transferencias.html" target="_self"><li>Transferências</li></a>
-                    <a href="cadastro.html" target="_self"><li>Cadastro</li></a>
-                    <a href="contato.html" target="_self"><li>Contato</li></a>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <div id="listas">
-        <br><br><br>
-                <h2 class="mapa-site"><a href="index.html" target="_self">Home</a> > CADASTRO</h2>
-    </div>
 
+<input type="checkbox" id="check">
+<label for="check"><img src="imagens/icone.png" id="icone" height=40px></label>
+
+<div class="barra">
+
+    <nav class="menul">
+        <h4>Menu Principal</h4>
+        <ul>
+            <li><a href="index.html"><div class="link">Home</div></a></li>
+            <li><a href="listas.html"><div class="link">Listas de Material</div></a></li>
+            <li><a href="transf.html"><div class="link">Transferências</div></a></li>
+            <li><a href="transp.html"><div class="link">Transporte Escolar</div></a></li>
+            <li><a href="reforco.html"><div class="link">Aulas de Reforço</div></a></li>
+            <li><a href="merenda.html"><div class="link">Delivery de Merenda</div></a></li> 
+            </li>
+        </ul>
+    </nav>
+</div>
+
+    <div id="topo"></div> <!-- Ancoragem do "volta ao topo" -->
+    <div class="fundo-menu">
+        <img class="logo" src="imagens/logo-mochilistas-bco-lar.png" alt="logo mochilistas">
+    </div>
+    <div>
+        <h2 class="local"><img src="imagens/local-seta.gif" height="10px"> CADASTRO</h2><br>
+    </div>
+<section id="secao">
+    <br>
     <h1 class="lista">Formulário de Cadastro</h1>
 
-<form action="cadastro.html" method="post" autocomplete="on">
+    <form action="cadastro.html" method="post" autocomplete="on">
 
     <fieldset>
         <legend><strong>Identificação do aluno</strong></legend>
@@ -55,7 +66,7 @@
                 <input type="password" name="senha" required minlength="4" autocomplete="" size="15"><br>
             
                 
-                    <label for="sexo">Sexo:</label>
+                    <label for="sexo">Sexo :</label>
                     <select name="sexo">
                         <option value="Feminino">Feminino</option>
                         <option value="Feminino">Masculino</option>
@@ -65,11 +76,11 @@
             </td>
         </table>
     </fieldset>
-<br>        
-        <fieldset>
-            <legend><strong>Instituição</strong></legend>
-            <table class="formulario">
-                <tr>
+        <br>        
+    <fieldset>
+        <legend><strong>Instituição</strong></legend>
+        <table class="formulario">
+            <tr>
                 <td>
                     <label for="escola">Escola : </label>
                     <select name="escola"><br>
@@ -103,57 +114,64 @@
                     <input type="text" name="cidade" size="57"><br>
                 
                 
-                <label for="estado">Estado/UF:</label>
-                <select name="estado"><br>
-                    <option value="Acre">Acre</option>
-                    <option value="Alagoas">Alagoas</option>
-                    <option value="Amapá">Amapá</option>
-                    <option value="Amazonas">Amazonas</option>
-                    <option value="Bahia">Bahia</option>
-                    <option value="Ceará">Ceará</option>
-                    <option value="Distrito Federal">Distrito Federal</option>
-                    <option value="Espírito Santo">Espírito Santo</option>
-                    <option value="Goiás">Goiás</option>
-                    <option value="Maranhão">Maranhão</option>
-                    <option value="Mato Grosso">Mato Grosso</option>
-                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
-                    <option value="Minas Gerais">Minas Gerais</option>
-                    <option value="Paraíba">Paraíba</option>
-                    <option value="Pará">Pará</option>
-                    <option value="Paraná">Paraná</option>
-                    <option value="Pernambuco">Pernambuco</option>
-                    <option value="Piauí">Piauí</option>
-                    <option value="Rio de Janeiro">Rio de Janeiro</option>
-                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
-                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
-                    <option value="Rondônia">Rondônia</option>
-                    <option value="Roraima">Roraima</option>
-                    <option value="São Paulo">São Paulo</option>
-                    <option value="Santa Catarina">Santa Catarina</option>
-                    <option value="Sergipe">Sergipe</option>
-                    <option value="Tocantins">Tocantins</option>
-                </select>
+                    <label for="estado">Estado:</label>
+                    <select name="estado"><br>
+                        <option value="Acre">Acre</option>
+                        <option value="Alagoas">Alagoas</option>
+                        <option value="Amapá">Amapá</option>
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Bahia">Bahia</option>
+                        <option value="Ceará">Ceará</option>
+                        <option value="Distrito Federal">Distrito Federal</option>
+                        <option value="Espírito Santo">Espírito Santo</option>
+                        <option value="Goiás">Goiás</option>
+                        <option value="Maranhão">Maranhão</option>
+                        <option value="Mato Grosso">Mato Grosso</option>
+                        <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Paraíba">Paraíba</option>
+                        <option value="Pará">Pará</option>
+                        <option value="Paraná">Paraná</option>
+                        <option value="Pernambuco">Pernambuco</option>
+                        <option value="Piauí">Piauí</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Roraima">Roraima</option>
+                        <option value="São Paulo">São Paulo</option>
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="Sergipe">Sergipe</option>
+                        <option value="Tocantins">Tocantins</option>
+                    </select>
                 </td>
             </tr>
         </table>
-        </fieldset><br>
-    
-        </fieldset>
+    </fieldset><br>
 
         <table class="enviar">
             <td>
                 <input type="submit" value="  Enviar  " name="btn-envio" class="enviar">
             </td>
         </table>
-    </fieldset>
-
-</form><br><br><br>
-</div>  
-<footer>
-                
-    <h2>Mochilistas - Todos os direitos reservados - 2021</h2>
     
+
+    </form><br><br><br>
+    </div> 
+    <div>
+        <a href="#topo"><img class="volta-topo" src="imagens/seta-topo.png" alt="seta-topo"></a>
+    </div>
+</section>
+<footer>
+    <div class="rodape">
+        <img src="imagens/logo-mochilistas-az-bco.png" class="rodape">
+
+        <h3>Curso Programador Web/SENAC 2021 [Equipe 2] * Todos os direitos reservados</h3>
+        <h2><a href="contato.html">Fale conosco </a></h2>
+        <h2><a href="https://fb.com" target="_blank"><img src="imagens/facebook.jpg"></a>  <a href="https://instagram.com" target="_blank"><img src="imagens/Instagram.PNG"></a></h2>
+    </div>        
 </footer>  
+
 
 </body>
 </html>

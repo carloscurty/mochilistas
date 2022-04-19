@@ -22,19 +22,26 @@
 <body>
 
     <input type="checkbox" id="check">
-    <label for="check"><img src="imagens/icone.png" id="icone"></label>
+    <label for="check"><img src="imagens/icone.png" id="icone" height=40px></label>
 
     <div class="barra">
 
         <nav class="menul">
             <h4>Menu Principal</h4>
             <ul>
-                <li><a href="cadastro.html"><div class="link">Cadastro</div></a></li>
-                <li><a href="listas.html"><div class="link">Listas de Material</div></a></li>
-                <li><a href="transf.html"><div class="link">Transferências</div></a></li>
-                <li><a href="transp.html"><div class="link">Transporte Escolar</div></a></li>
-                <li><a href="reforco.html"><div class="link">Aulas de Reforço</div></a></li>
-                <li><a href="merenda.html"><div class="link">Delivery de Merenda</div></a></li>
+                <li onmousemove="trocaicone('imagens/folha_fichario.png')" onmouseout="trocaicone('imagens/icone.png')">
+                    <a href="cadastro.html"><div class="link">Cadastro</div></a></li>
+                <li onmousemove="trocaicone('imagens/lista-material.png')" onmouseout="trocaicone('imagens/icone.png')">
+                    <a href="listas.html"><div class="link">Listas de Material</div></a></li>
+                <li onmousemove="trocaicone('imagens/transferencia.jfif')" onmouseout="trocaicone('imagens/icone.png')">
+                    <a href="transf.html"><div class="link">Transferências</div></a></li>
+                <li onmousemove="trocaicone('imagens/transporte-escolar.png')" onmouseout="trocaicone('imagens/icone.png')">
+                    <a href="transp.html"><div class="link">Transporte Escolar</div></a></li>
+                <li onmousemove="trocaicone('imagens/reforco-escolar.png')" onmouseout="trocaicone('imagens/icone.png')">
+                    <a href="reforco.html"><div class="link">Aulas de Reforço</div></a></li>
+                <li onmousemove="trocaicone('imagens/merenda-escolar.png')" onmouseout="trocaicone('imagens/icone.png')">
+                    <a href="merenda.html"><div class="link">Delivery de Merenda</div></a></li>
+                    
                 </li>
             </ul>
         </nav>
@@ -45,7 +52,7 @@
         <img class="logo" src="imagens/logo-mochilistas-bco-lar.png" alt="logo mochilistas">
     </div>
     <div>
-        <h2 class="local"><img src="imagens/local-seta.gif" height="10px"> HOME</h2><br>
+        <h2 class="local"><img src="imagens/local-seta.gif" height="10px"> Home</h2><br>
     </div>
 
     <section id="secao">
@@ -102,10 +109,11 @@
     <footer>
         <div class="rodape">
             <img src="imagens/logo-mochilistas-az-bco.png" class="rodape">
-
-            <h3>Curso Programador Web/SENAC 2021 [Equipe 2] * Todos os direitos reservados</h3>
-            <h2><a href="contato.html">Fale conosco </a></h2>
-            <h2><a href="https://fb.com" target="_blank"><img src="imagens/facebook.jpg"></a>  <a href="https://instagram.com" target="_blank"><img src="imagens/Instagram.PNG"></a></h2>
+        </div>
+        <div>
+            <h2>Todos os direitos reservados - 2021 <a href="contato.html">
+                Fale conosco | </a><a href="https://fb.com" target="_blank"><img src="imagens/facebook.jpg"></a> | <a href="https://instagram.com" target="_blank"><img src="imagens/Instagram.PNG"></a>
+            </h2>
         </div>        
     </footer>  
 

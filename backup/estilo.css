@@ -1,48 +1,56 @@
 @charset "utf-8";
 
 body {
-    background-color: white;
+    background-color: antiquewhite;
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1000px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-section {
-    width: 1100px;
-    max-width: 100%;
-}
-div.color {
-    width: 89%;
-    padding: 0px;
-    margin: 50px auto;
+aside.direita {
+    height: 400px;
+    width: 210px;
+    padding: 15px;
+    margin-left: 820px;
+    margin-top: -400px;
+    border: thin solid #1056c7;
+    background-color: rgb(211, 188, 136);
     text-align: center;
 }
-div.nocolor {
-    width: 90%;
+aside.esquerda {
+    height: 400px;
+    width: 220px;
     padding: 15px;
-    margin: 50px auto;
+    left: 2px;
+    margin-top: 45px;
+    border: thin solid #1056c7;
+    background-color: rgb(175, 197, 238);
     text-align: justify;
+    position: absolute;
     z-index: 1;
 }
-.color h3 {
-    font-size: 25px;
-    text-align: left;
-    color: white;
-    background-color:#1056c7;
-    padding: 30px 50px;
-}
-.nocolor h3 {
+aside h3 {
     text-align: center;
     font-style: italic;
-    /*color: goldenrod;*/
+    color: goldenrod;
     background-color:#1056c7;
-    padding: 50px;
+    text-shadow: 0 1px white;
 }
-.color p{
-    font-size: 18px;
+aside h5 {
+    text-align: right;
+}
+aside p {
+    font-size: 14px;
+}
+aside a {
+    text-decoration: none;
+    color: #1056c7;
+}
+aside a:hover {
+    text-shadow: 0 1px white;
+}
+aside.direita p{
     text-align: justify;
-    padding: 20px;
-}
-img.link-interno:hover {
-    opacity: 0.6;
+    font-size: 12px;
 }
 .volta-topo {
     position: fixed;
@@ -66,16 +74,23 @@ header {
     padding: 5px;
 }
 
-div.secao {
+/*div.secao {
     text-align: center; 
-    width: 1000px;
-    max-width: 90%;
-    margin: 30px auto;
+    width: 600px;
+}*/
+
+.cabecalho {
+    font-family: 'Lobster Two', cursive;
+    background-color: #d9d6b4;
+    margin: 20px auto; 
 }
-img#img-secao {
-    margin-top: 50px;
-    width: 400px;
-    
+
+img#servico {
+    /*width: 150px;*/
+    height: 100px;
+    position: absolute;
+    margin: -80px 200px;
+    right: 0;
 }
 
 /*h2.mapa-site {
@@ -117,12 +132,10 @@ h2 {
 */
 div.fundo-menu {
     top: 0;
-    height: 80px;
+    height: 70px;
     width: 100%;
-    max-width: 100%;
     position: fixed;
     padding: 0px;
-    border-bottom: 20px solid orange;
     background-color: #1056c7;
     text-align: center;
     z-index: 14;
@@ -197,7 +210,7 @@ h2.local a:hover {
     position: fixed;
     top: -10px;
     z-index:25;
-    margin: 0 -100px;
+    margin: 0 auto;
 }
 
 .logo-gr {
@@ -396,11 +409,10 @@ p.tit-texto {
     width: 700px;
     margin: 0 auto;
 }
-#secao {
+div#secao {
     top: 0px;
-    width: 1070px;
-    max-width: 100%;
-    margin: 0px auto;
+    width: 820px;
+    margin: 30px auto;
     text-align: center;
     /*max-width: 1000px;*/
     padding: 10px;
@@ -451,7 +463,6 @@ table.formulario {
     padding: 10px;
     margin: 0 5px;
     font-size: 15px;
-    text-align: left;
 }
 
 table.enviar {
@@ -495,10 +506,9 @@ footer {
     text-align: center;
     vertical-align: bottom;
     padding: 2px 0 0 0;
-    border-top: 3px solid orange;
     width: 100%;
     /*position: fixed;*/
-    margin: 10px auto;
+    margin: 0px auto;
     bottom: 0px;
     z-index: 15;
 }
@@ -507,7 +517,7 @@ footer a {
     color: #1056c7;
 }
 footer a:hover {
-    color: orange;
+    color: goldenrod;
     text-shadow: 1px 1px 2px #1056c7;
 }
 footer img {
@@ -519,9 +529,9 @@ footer h3 {
     font-size: 10px;
 }
 div.rodape {
-    
+    background-color: goldenrod;
     padding: 0;
-    
+    border: 0;
 }
 img.rodape {
     width: 100px;
@@ -535,36 +545,29 @@ img.rodape {
     display: none;
 }
 #icone {
-    width: 50px;
-    height: 55px;
-    background-color:transparent;
     top: 5px;
     cursor: pointer;
-    padding:15px 15px 15px 17px;
+    padding:15px;
     position: fixed;
     z-index: 15;
 }
 #icone:hover {
-    height: 50px;
-    width: 50px;
     background-color:white;
-    padding-top: 0px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    top: 7px;
-    border: 5px solid #1056c7;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    top:0px;
+    
 }
 .barra {
     height: 100%;
-    width: 215px;
+    width: 250px;
     position: fixed;
-    transition: all .5s linear;
+    transition: all .2s linear;
     left: -300px;
     z-index:14;
 }
 nav {
-    width: 210px;
+    width: 250px;
     position: absolute;
     top: 80px;
     z-index:14;
@@ -576,27 +579,20 @@ nav a {
 .link {
     background-color:#1056c7;
     padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     transition: all 0.5s ease;
     color: #f4f4f9;
-    border-bottom: 10px solid white;
+    border-bottom: 20px solid burlywood;
     opacity: 0.5;
     margin-top: 200px;
 }
 .link:hover {
-    background-color: rgb(168, 196, 248);
-    color: #1056c7;
-    font-weight: bolder;
-    text-align: right;
+    background-color: white;
+    color: #05275e;
+    text-align: center;
     text-transform: uppercase;
-    border-bottom: 10px solid orange;
-    transition: 0.3s;
-}
-.ico-menu {
-    position: absolute;
-    width: 50px;
-    vertical-align: middle;
+    border-bottom: 20px solid goldenrod;
 }
 /*.slink {
     background-color:#1056c7;
@@ -615,7 +611,7 @@ nav a {
     text-align: right;
     background-color:#05275e;
     padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 15px;
     transition: all 0.5s ease;
     color: #f4f4f9;
@@ -632,8 +628,6 @@ nav a {
 }*/
 #check:checked ~ .barra{
     transform: translateX(300px);
-    background-color:rgba(0, 0, 0, 0.4);
-    transition: all 0.5s;
 }
 #check:checked ~ .barra nav a .link{
     opacity: 1;
@@ -651,8 +645,8 @@ margin-left: 201px;
 top: 200px;
 }
 .menul h4 {
-    color: orange;/*esconder "Menu Principal"*/
-    background-color: orange;
+    color: goldenrod;/*esconder "Menu Principal"*/
+    background-color: goldenrod;
     text-align: center;
 }
 /* --------FIM MENU LATERAL ------*/

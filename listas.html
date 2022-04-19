@@ -14,71 +14,54 @@
     <title>Mochilistas</title>
 </head>
 
+<script>
+    function trocaicone (icon) {
+        document.getElementById("icone").src=icon;
+    }
+</script>
+
 <body>
-    <div id="topo"></div> <!-- Ancoragem do "volta ao topo" -->
-    <img class="logo" src="imagens/logo-mochilistas-bco-lar.png" alt="logo mochilistas">
+
+<input type="checkbox" id="check">
+<label for="check"><img src="imagens/icone.png" id="icone"></label>
+
+<div class="barra">
+
+    <nav class="menul">
+        <h4>Menu Principal</h4>
+        <ul>
+            <li><a href="index.html"><div class="link">Home</div></a></li>
+            <li><a href="cadastro.html"><div class="link">Cadastro</div></a></li>
+            <li><a href="transf.html"><div class="link">Transferências</div></a></li>
+            <li><a href="transp.html"><div class="link">Transporte Escolar</div></a></li>
+            <li><a href="reforco.html"><div class="link">Aulas de Reforço</div></a></li>
+            <li><a href="merenda.html"><div class="link">Delivery de Merenda</div></a></li>
+            </li>
+        </ul>
+    </nav>
+</div>
     
-    <header class="menu-top">    
+        <div id="topo"></div> <!-- Ancoragem do "volta ao topo" -->
         <div class="fundo-menu">
-            <nav class="menu">
-                <ul class="cor-menu">
-                    <a href="index.html" target="_self"><li>Home</li></a>
-                    <a href="listas.html" target="_self"><li>Listas de Material</li></a>
-                    <a href="servicos.html" target="_self"><li>Serviços</li></a>
-                    <a href="transferencias.html" target="_self"><li>Transferências</li></a>
-                    <a href="cadastro.html" target="_self"><li>Cadastro</li></a>
-                    <a href="contato.html" target="_self"><li>Contato</li></a>
-                </ul>
-            </nav>
+            <img class="logo" src="imagens/logo-mochilistas-bco-lar.png" alt="logo mochilistas">
         </div>
-    </header>
-
+        <div>
+            <h2 class="local"><img src="imagens/local-seta.gif" height="10px"> LISTAS DE MATERIAL</h2><br>
+        </div>
+<section id="secao">
+    
     <div id="secao">
-        <br><br><br>
-        <h2 class="mapa-site"><a href="index.html" target="_self">Home</a> > LISTAS DE MATERIAL ESCOLAR</h2><br>
 
-        <div class="gallery autoplay items-5">
-            <div id="item-1" class="control-operator"></div>
-            <div id="item-2" class="control-operator"></div>
-            <div id="item-3" class="control-operator"></div>
-            <div id="item-4" class="control-operator"></div>
-            <div id="item-5" class="control-operator"></div>
-                <figure class="item">
-                    <h1><img src="imagens/escola001.png"></h1>
-                </figure>
-                <figure class="item">
-                    <h1><img src="imagens/escola002.png"></h1>
-                </figure>
-                <figure class="item">
-                    <h1><img src="imagens/escola003.png"></h1>
-                </figure>
-                <figure class="item">
-                    <h1><img src="imagens/escola004.png"></h1>
-                </figure>
-                <figure class="item">
-                    <h1><img src="imagens/escola005.png"></h1>
-                </figure>
-            <div class="controls">
-                <a href="#item-1" class="control-button">.</a>
-                <a href="#item-2" class="control-button">.</a>
-                <a href="#item-3" class="control-button">.</a>
-                <a href="#item-4" class="control-button">.</a>
-                <a href="#item-5" class="control-button">.</a>
-                </div>
-            </div>    
-
-            
-            <!--<div class="secao"></div>
-            -->
-
-<!--            <script>
-                var imgEscola = ["imagens/escola001.png", "imagens/escola002.png", "imagens/escola003.png", "imagens/escola004.png", "imagens/escola005.png", "imagens/escola006.png"]
-                var nomEscola = ['Centro Educacional Harry Pontes', 'Instituto Dom Barroso', 'Associação Escolar Machado de Assis','Escola Técnica de Nutrição', 'Colégio Hipótese']
-            </script>
--->
-            <table class="listas">
+    <table class="listas">
                 <th><img src="imagens/lista-material.png" alt="Lista de material"></th>
-                <th colspan="2"> Localize a escola em que você estuda e clique na imagem para ver as listas disponíveis:</th>
+                <th colspan="2"> Localize a escola em que você estuda e clique na imagem para ver as listas de material escolar disponíveis:</th>
+                <tr class="busca">
+                    <td colspan="3" class>
+                        <label for="busca">Busca: </label>
+                        <input type="text" id="busca" name="nome" size="65" class="lupa" placeholder="Digite a sua escola">
+                        <button type="submit" name="busca" class="lupa">&#128269;</button>
+                    </td>
+                </tr>
                 <tr>
                 <td>
                     <ul style="list-style: none;">
@@ -172,19 +155,21 @@
                 </tr>
 
             </table>
-        </div>
-
-        <div class="separador">
-            <div class="volta-topo">
-                <a href="#topo"><img src="imagens/seta-topo.webp" alt="seta-topo"></a>
-            </div>
-        </div>
         
-            <footer>
-                
-                <h2>Mochilistas - Todos os direitos reservados - 2021</h2>
-                
-            </footer>  
-    </div>
-</body>
-</html>
+        <div>
+            <a href="#topo"><img class="volta-topo" src="imagens/seta-topo.png" alt="seta-topo"></a>
+        </div>
+</section>        
+<footer>
+    <div class="rodape">
+        <img src="imagens/logo-mochilistas-az-bco.png" class="rodape">
+
+        <h3>Curso Programador Web/SENAC 2021 [Equipe 2] * Todos os direitos reservados</h3>
+        <h2><a href="contato.html">Fale conosco </a></h2>
+        <h2><a href="https://fb.com" target="_blank"><img src="imagens/facebook.jpg"></a>  <a href="https://instagram.com" target="_blank"><img src="imagens/Instagram.PNG"></a></h2>
+    </div>        
+</footer>  
+
+    
+        </body>
+    </html>
