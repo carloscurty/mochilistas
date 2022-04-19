@@ -122,7 +122,7 @@ div.fundo-menu {
     max-width: 100%;
     position: fixed;
     padding: 0px;
-    border-bottom: 20px solid red;
+    border-bottom: 20px solid orangered;
     background-color: #1056c7;
     text-align: center;
     z-index: 14;
